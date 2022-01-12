@@ -3,15 +3,12 @@ import cv2
 
 cap = cv2.VideoCapture(0)
 
-def doNothing(x):
-    pass
-
 while(True):
     # Capture frame-by-frame
     ret, frame = cap.read()
     
     # Used
-    # https://www.geeksforgeeks.org/filter-color-with-opencv/
+    # https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_gui/py_video_display/py_video_display.html
     # https://answers.opencv.org/question/200861/drawing-a-rectangle-around-a-color-as-shown/
     
     # Convert BGR to HSV
